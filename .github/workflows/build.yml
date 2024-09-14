@@ -24,4 +24,4 @@ jobs:
           name: Release ${{ github.ref_name }}
           files: |
             Release.txt
-            LICENSE
+            
