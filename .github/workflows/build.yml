@@ -1,6 +1,6 @@
 name: Publish Release
 on:
-  push: [main]
+  [push]:
     tags:
       - 'v*'
 jobs:
@@ -15,3 +15,7 @@ jobs:
       with:
         title: MyReleaseMessage
         tag: MyTag
+
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
